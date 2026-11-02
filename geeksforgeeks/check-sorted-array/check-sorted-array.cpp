@@ -1,0 +1,16 @@
+class Solution {
+  public:
+    bool isSorted(vector<int>& arr) {
+        // code here
+        for(int i = 1;i<arr.size()-1;i++){
+            if(arr[i+1]>=arr[i]){
+                
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
+        
+    }
+};
