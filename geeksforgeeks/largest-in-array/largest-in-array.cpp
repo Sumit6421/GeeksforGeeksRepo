@@ -1,14 +1,12 @@
 class Solution {
   public:
     int largest(vector<int> &arr) {
-        // code here
-        if(arr.size()==1) return arr[0];
-        int largest = arr[0];
-        for(int i = 0;i<arr.size();i++){
-            if(arr[i]>largest){
-                largest = arr[i];
-            }
-        }
-        return largest;
+    int maxi = arr[0];
+    if(arr.size()==1) return arr[0];
+    for(int i = 0;i<arr.size();i++){
+        maxi = max(maxi,arr[i]);
+        
+    }
+    return maxi;
     }
 };
